@@ -35,21 +35,21 @@ function App() {
       </header>
 
       <section className="hero">
-        <div className="eyebrow"><span className="eyebrow-line" /> THE WEB, THROUGH AN AI LENS</div>
-        <h1>What does AI<br /><span>actually see?</span></h1>
-        <p className="hero-copy">Explore the information a webpage makes accessible to automated readers — and spot the gaps that could make your content harder to understand.</p>
+        <div className="eyebrow">LLM Renderer</div>
+        <h1>How do LLMs see your webpage?</h1>
+        <p className="hero-copy">Find out how LLMs like ChatGPT render your webpages to identify any blind spots. All models work differently and this is just a way to conceptualise it.</p>
         <div className="url-box">
           <Globe2 size={18} className="url-icon" />
           <input aria-label="Website URL" value={url} onChange={e => setUrl(e.target.value)} onKeyDown={e => e.key === 'Enter' && runDemo()} />
           <button onClick={runDemo}><Search size={16} /> Inspect URL <span>↗</span></button>
         </div>
-        <div className="input-note"><span className="sparkle">✳</span> One URL at a time <span className="note-divider">·</span> No crawling, no guesswork</div>
+        <div className="input-note"><span className="sparkle">✳</span> One URL at a time</div>
         {submitted && <div className="demo-notice">This is a visual prototype — live URL analysis is the next build step.</div>}
       </section>
 
       <section className="workspace">
         <div className="section-heading">
-          <div><div className="eyebrow small">THE INSPECTION WORKSPACE</div><h2>One page. Two perspectives.</h2></div>
+          <div><div className="eyebrow small">THE INSPECTION WORKSPACE</div><h2>Compare what you see to what AI crawlers see.</h2></div>
           <div className="sample-label"><span className="sample-dot" /> SAMPLE PREVIEW</div>
         </div>
         <div className="view-grid">
